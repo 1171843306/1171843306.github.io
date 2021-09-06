@@ -5,22 +5,24 @@
     <title>hi</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-    <script>
-        var gitalk = new Gitalk({
-            "clientID": "99e4bc5d6598030ff335",
-            "clientSecret": "ebcefc6d26a73ab562e5913c7033e9d9a9ecf47e",
-            "repo": "https://1171843306.github.io",
-            "owner": "1171843306",
-            "admin": ["1171843306"],
-            "id": location.pathname,
-            "distractionFreeMode": false
-        });
-        gitalk.render("gitalk-container");
-    </script>
 </head>
 
 <body>
 <div id="gitalk-container"></div>
+
+<script>
+    console.log(location.pathname)
+    var gitalk = new Gitalk({
+        "clientID": "99e4bc5d6598030ff335",
+        "clientSecret": "ebcefc6d26a73ab562e5913c7033e9d9a9ecf47e",
+        "repo": "https://1171843306.github.io",
+        "owner": "1171843306",
+        "admin": ["1171843306"],
+        "id": location.pathname,
+        "distractionFreeMode": false
+    });
+    gitalk.render("gitalk-container");
+</script>
 </body>
 
 </html>
